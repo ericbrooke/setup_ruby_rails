@@ -32,7 +32,12 @@ check ruby and rails versions with rvm
 setup gemset:
 rvm use 2.1.1@app_name -- create -- default
 
+# 3.2
 rails new app_name --skip-test-unit
+
+# 4.0
+rails new py_website --skip-test-unit --database=postgresql
+
 cd app_name
 
 check gemfile add database

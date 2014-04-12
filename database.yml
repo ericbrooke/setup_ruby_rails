@@ -1,0 +1,27 @@
+# options for config/database.yml
+
+#sqlite3
+
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
+
+#postgresql
+
+development:
+  adapter: postgresql
+  database: app_name_development
+  username: root
+  password: 
+
+#mysql
+
+development:
+  adapter: mysql2
+  database: app_name_development
+  username: root
+  password: 
+  encoding: utf8
+

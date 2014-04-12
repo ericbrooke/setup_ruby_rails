@@ -36,6 +36,8 @@ rails new app_name --skip-test-unit
 cd app_name
 
 check gemfile add database
+add the configuration into config/database.yml
+
 check groups
 add rspec-rails
 bundle

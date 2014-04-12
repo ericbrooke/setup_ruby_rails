@@ -50,6 +50,9 @@ bundle
 rails generate rspec:install
 bundle binstubs rspec-rails
 
+add into your spec_helper.rb:
+config.include Capybara::DSL
+
 edit READMe
 
 git init

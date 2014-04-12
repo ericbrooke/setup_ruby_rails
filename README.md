@@ -65,6 +65,8 @@ git push origin master -u
 
 Getting started on the App
 ======
+bin/rake db:create db:migrate
+
 git checkout -b first_feature
 write first features test e.g. creating a resource
 routes:

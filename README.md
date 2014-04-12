@@ -62,7 +62,7 @@ git push origin master -u
 
 Getting started on the App
 ======
-
+git checkout -b first_feature
 write first features test e.g. creating a resource
 routes:
 root "the first page"

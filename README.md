@@ -49,5 +49,6 @@ check .gitignore file
 git add .
 git commit -m "new app setup"
 git remote add origin git@github.com:ericbrooke/app_name
-git push
+git push origin master -u
 
+binstubs rspec

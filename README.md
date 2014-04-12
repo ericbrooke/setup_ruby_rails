@@ -43,6 +43,7 @@ add rspec-rails
 bundle
 
 rails generate rspec:install
+bundle binstubs rspec-rails
 
 edit READMe
 
@@ -53,5 +54,21 @@ git commit -m "new app setup"
 git remote add origin git@github.com:ericbrooke/app_name
 git push origin master -u
 
-bundle binstubs rspec-rails
+
+Getting started on the App
+======
+
+write first features test e.g. creating a resource
+routes:
+root "the first page"
+resources
+
+controller:
+rails generate controller controller_name
+
+controller#action:
+def index
+end
+
+view
 

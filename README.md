@@ -51,4 +51,5 @@ git commit -m "new app setup"
 git remote add origin git@github.com:ericbrooke/app_name
 git push origin master -u
 
-binstubs rspec
+bundle binstubs rspec-rails
+

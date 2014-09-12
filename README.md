@@ -104,11 +104,14 @@ syntax = rvm use ruby_version@app_name -- create -- default
 rvm use 2.1.2@the_best_app -- create -- default
 ```
 ### For rails 3.2
+```
 rails new app_name --skip-test-unit
-
+```
 ### For rails 4.0
+```
 rails new py_website --skip-test-unit --database=postgresql
-
+```
+##Setup for the rails application
 ```
 cd app_name
 git init

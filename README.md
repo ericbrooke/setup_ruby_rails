@@ -11,12 +11,18 @@ Setup your text editor to open from command line:
 1. Atom - Install Shell Commands from the Atom menu
 2. (Sublime)[https://www.sublimetext.com/docs/2/osx_command_line.html]
 
-Setup Git
+Setup Git (for atom)
 ```
 git config --global user.name "Your Real Name"
 git config --global user.email me@example.com
 git config -l --global
+git config --global core.editor "atom --wait"
 ```
+or for Sublime change the last line to
+```
+git config --global core.editor "subl -n -w"
+```
+
 Setup ruby versioning:
 Install RVM - ensure to set PATH
 

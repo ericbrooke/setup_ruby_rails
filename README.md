@@ -1,10 +1,15 @@
 #setup for new Mac OSX
-=====
 
 Ensure that commanbd line tools can access the shell environment:
 ```
 Install Xcode command line - gcc
 ```
+Setup your text editor to open from command line:
+
+*Do not run your text editor from your downloads folder move it to Applications folder*
+
+1. Atom - Install Shell Commands from the Atom menu
+2. (Sublime)[https://www.sublimetext.com/docs/2/osx_command_line.html]
 
 Setup Git
 ```

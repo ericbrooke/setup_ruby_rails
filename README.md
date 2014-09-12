@@ -1,4 +1,4 @@
-setup for new Mac OSX
+#setup for new Mac OSX
 =====
 
 Ensure that commanbd line tools can access the shell environment:
@@ -18,12 +18,18 @@ Install RVM - ensure to set PATH
 ```
 \curl -L https://get.rvm.io | bash -s stable --ruby
 ```
-Use one file for additional paths
+Use one file for additional paths open .bash_profile:
+```
+if [ -f ~/.bashrc ];
+then
+source ~/.bashrc
+fi
+```
 
 open .bashrc in a text editor and add:
 ```
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-``
+```
 
 Faster Gem download
 ```
@@ -42,9 +48,9 @@ Brew install redis
 Download Postgres
 PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH" 
 
-Setup .subl path
 
-setup for new rails app
+
+#setup for new rails app
 =====
 gem install rails
 
@@ -84,7 +90,7 @@ git remote add origin git@github.com:ericbrooke/app_name
 git push origin master -u
 
 
-Getting started on the App
+#Getting started on the App
 ======
 bin/rake db:create db:migrate
 

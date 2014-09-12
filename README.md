@@ -88,7 +88,10 @@ PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 ```
 brew install mysql
 ```
-
+Remember this useful command for mysql
+```
+brew info mysql
+```
 
 #Setup for new rails app
 

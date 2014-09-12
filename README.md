@@ -1,4 +1,4 @@
-#setup for new Mac OSX
+#Setup for new Mac OSX
 
 Install Xcode from the App store
 
@@ -79,13 +79,20 @@ Brew install redis
 
 You will to download and setup a service for each
 
-Download Postgres
+####Postgres
+Download [Postgres](http://postgresapp.com)
 PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH" 
 
+####MySQL
+
+```
+brew install mysql
+```
 
 
-#setup for new rails app
-=====
+#Setup for new rails app
+
+
 gem install rails
 
 check ruby and rails versions with rvm

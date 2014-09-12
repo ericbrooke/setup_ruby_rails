@@ -92,50 +92,64 @@ brew install mysql
 
 #Setup for new rails app
 
-
+```
 gem install rails
-
+```
 check ruby and rails versions with rvm
 
 setup gemset:
-rvm use 2.1.1@app_name -- create -- default
 
-# 3.2
+syntax = rvm use ruby_version@app_name -- create -- default
+```
+rvm use 2.1.2@the_best_app -- create -- default
+```
+### For rails 3.2
 rails new app_name --skip-test-unit
 
-# 4.0
+### For rails 4.0
 rails new py_website --skip-test-unit --database=postgresql
 
+```
 cd app_name
+git init
+```
 
 check gemfile add database
+
 add the configuration into config/database.yml
 
 check groups
 add rspec-rails
 bundle
 
+```
 rails generate rspec:install
 bundle binstubs rspec-rails
+```
 
 add into your spec_helper.rb:
+```
 config.include Capybara::DSL
+```
 
+rename readme to readme.md
 edit READMe
 
-git init
 check .gitignore file
+
+```
 git add .
 git commit -m "new app setup"
 git remote add origin git@github.com:ericbrooke/app_name
 git push origin master -u
-
+```
 
 #Getting started on the App
 ======
+```
 bin/rake db:create db:migrate
-
 git checkout -b first_feature
+```
 write first features test e.g. creating a resource
 routes:
 root "the first page"

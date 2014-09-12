@@ -1,6 +1,8 @@
 #setup for new Mac OSX
 
-Ensure that commanbd line tools can access the shell environment:
+Install Xcode from the App store
+
+Ensure that command line tools can access the shell environment:
 ```
 Install Xcode command line - gcc
 ```
@@ -11,11 +13,15 @@ Setup your text editor to open from command line:
 1. Atom - Install Shell Commands from the Atom menu
 2. [Sublime](https://www.sublimetext.com/docs/2/osx_command_line.html)
 
-Setup Git (for atom)
+##Setup Git
 ```
 git config --global user.name "Your Real Name"
 git config --global user.email me@example.com
 git config -l --global
+
+```
+For Atom users:
+```
 git config --global core.editor "atom --wait"
 ```
 or for Sublime change the last line to
@@ -23,12 +29,13 @@ or for Sublime change the last line to
 git config --global core.editor "subl -n -w"
 ```
 
-Setup ruby versioning:
-Install RVM - ensure to set PATH
+###Setup one file for Bash PATH Management
 
-```
-\curl -L https://get.rvm.io | bash -s stable --ruby
-```
+There are three that can have opinions on this:
+1. .profile
+1. .bash_profile
+1. .bashrc
+
 Use one file for additional paths open .bash_profile:
 ```
 if [ -f ~/.bashrc ];
@@ -36,17 +43,27 @@ then
 source ~/.bashrc
 fi
 ```
+###Setup ruby version management
 
-open .bashrc in a text editor and add:
+Install RVM - ensure to set PATH
+
 ```
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+\curl -L https://get.rvm.io | bash -s stable --ruby
 ```
 
 Faster Gem download
 ```
 echo "gem: --no-document" >> ~/.gemrc
 ```
-Install a pacakage management system for Mac OS X there are:
+
+open .bashrc in a text editor and add:
+```
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+```
+
+###Install a package management system 
+
+For Mac OS X there are:
 [HomeBrew](http://brew.sh) and MacPorts
 
 Install HomeBrew:
@@ -54,7 +71,13 @@ Install HomeBrew:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
+###Install Redis
+```
 Brew install redis
+```
+###Install Database systems
+
+You will to download and setup a service for each
 
 Download Postgres
 PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH" 

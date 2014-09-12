@@ -95,13 +95,16 @@ brew install mysql
 ```
 gem install rails
 ```
+
+Choose a name for your application and replace app_name below with your name.
+
 check ruby and rails versions with rvm
 
 setup gemset:
 
 syntax = rvm use ruby_version@app_name -- create -- default
 ```
-rvm use 2.1.2@the_best_app -- create -- default
+rvm use 2.1.2@app_name -- create -- default
 ```
 ### For rails 3.2
 ```
@@ -109,7 +112,7 @@ rails new app_name --skip-test-unit
 ```
 ### For rails 4.0
 ```
-rails new py_website --skip-test-unit --database=postgresql
+rails new app_name --skip-test-unit --database=postgresql
 ```
 ##Setup for the rails application
 ```

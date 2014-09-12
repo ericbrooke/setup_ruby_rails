@@ -9,7 +9,7 @@ Setup your text editor to open from command line:
 *Do not run your text editor from your downloads folder move it to Applications folder*
 
 1. Atom - Install Shell Commands from the Atom menu
-2. (Sublime)[https://www.sublimetext.com/docs/2/osx_command_line.html]
+2. [Sublime](https://www.sublimetext.com/docs/2/osx_command_line.html)
 
 Setup Git (for atom)
 ```
@@ -47,7 +47,7 @@ Faster Gem download
 echo "gem: --no-document" >> ~/.gemrc
 ```
 Install a pacakage management system for Mac OS X there are:
-(HomeBrew)[http://brew.sh] and MacPorts
+[HomeBrew](http://brew.sh) and MacPorts
 
 Install HomeBrew:
 ```

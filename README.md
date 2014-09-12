@@ -32,9 +32,9 @@ git config --global core.editor "subl -n -w"
 ###Setup one file for Bash PATH Management
 
 There are three that can have opinions on this:
-1. .profile
-1. .bash_profile
-1. .bashrc
+* .profile
+* .bash_profile
+* .bashrc
 
 Use one file for additional paths open .bash_profile:
 ```

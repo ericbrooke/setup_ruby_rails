@@ -1,22 +1,41 @@
 setup for new Mac OSX
 =====
 
+Ensure that commanbd line tools can access the shell environment:
+```
 Install Xcode command line - gcc
+```
 
 Setup Git
-$ git config --global user.name "Your Real Name"
-$ git config --global user.email me@example.com
-$ git config -l --global
-
+```
+git config --global user.name "Your Real Name"
+git config --global user.email me@example.com
+git config -l --global
+```
+Setup ruby versioning:
 Install RVM - ensure to set PATH
-$ \curl -L https://get.rvm.io | bash -s stable --ruby
+
+```
+\curl -L https://get.rvm.io | bash -s stable --ruby
+```
+Use one file for additional paths
+
+open .bashrc in a text editor and add:
+```
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+``
 
 Faster Gem download
+```
 echo "gem: --no-document" >> ~/.gemrc
-gem install rails
+```
+Install a pacakage management system for Mac OS X there are:
+(HomeBrew)[http://brew.sh] and MacPorts
 
-Install HomeBrew
+Install HomeBrew:
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 Brew install redis
 
@@ -27,6 +46,8 @@ Setup .subl path
 
 setup for new rails app
 =====
+gem install rails
+
 check ruby and rails versions with rvm
 
 setup gemset:

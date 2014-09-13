@@ -12,3 +12,7 @@ export PS1="\\[\\033[1;30m\\][\\[\\033[1;35m\\]\\u@\\h\\[\\033[1;30m\\]] \\[\\03
 # alias
 
 alias coverage="open ./coverage/index.html"
+alias cd..="cd .."
+alias l="ls -al"
+alias lp="ls -p"
+alias h=history

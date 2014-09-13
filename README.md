@@ -35,12 +35,13 @@ There are three that can have opinions on this:
 * .profile
 * .bash_profile
 * .bashrc
+* 
+Mac OS X checks in this order  ~/.bash_profile, ~/.bash_login, and ~/.profile
 
 Use one file for additional paths open .bash_profile:
 ```
-if [ -f ~/.bashrc ];
-then
-source ~/.bashrc
+if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
 fi
 ```
 ###Setup ruby version management

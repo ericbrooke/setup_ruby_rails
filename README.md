@@ -146,6 +146,10 @@ sudo chgrp -R staff /usr/local
 ```
 now each user who is in staff group can use brew install
 
+##B Add your keys to your new account
+
+You may need to copy over your id_rsa.pub and id_rsa found in the .ssh directory
+
 ##A - Install Redis
 ```
 Brew install redis

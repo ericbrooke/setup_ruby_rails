@@ -160,6 +160,11 @@ chmod 600 ~/.ssh/id_rsa.pub
 
 If you had forward agents setup in a config file you will also need to set it up.
 
+Check github is all good with:
+```
+ssh -T git@github.com
+```
+
 ##A - Install Redis
 ```
 Brew install redis

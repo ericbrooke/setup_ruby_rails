@@ -176,6 +176,7 @@ move into the codebase folder
 specify ruby and gemset you want before you bundle:
 ```
 rvm use 2.1.3@gem_set_name --create
+echo "gem: --no-document" >> ~/.gemrc
 bundle
 rake db:migrate
 ```

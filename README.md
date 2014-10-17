@@ -8,6 +8,10 @@ A - New Computer, first account
 
 B - Extra User account
 
+##Download iTerm
+
+http://iterm2.com
+
 ##A + B - Xcode
 
 Install Xcode from the App store. Or ensure it is installed
@@ -282,3 +286,10 @@ def index
 end
 
 view
+
+##Optional setup iTerm
+
+# Setup profiles to open into the projects folder
+# ensure gemset correct
+# create preferred screen setup
+

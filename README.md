@@ -2,7 +2,9 @@
 
 There are two paths to follow one for a new computer and one for another account on the same computer which is alreadly being used for development.
 
-A - New Computer
+Follow the steps for the desired setup:
+
+A - New Computer, first account
 
 B - Extra User account
 

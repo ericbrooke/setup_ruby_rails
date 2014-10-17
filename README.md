@@ -203,6 +203,19 @@ PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 ```
 brew install mysql
 ```
+
+Ensure that mysql functions:
+```
+mysql.server start
+```
+If not:
+```
+brew remove mysql
+brew cleanup
+sudo rm -rf /usr/local/var/mysql/
+brew install mysql
+mysql.server start
+```
 Remember this useful command for mysql
 ```
 brew info mysql

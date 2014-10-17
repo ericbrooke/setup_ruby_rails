@@ -137,6 +137,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ```
 
 ### B - Setup Homebrew for mutiple user account use in Mac OS X
+This tricky and you may need to apply this rule in a number of places, particularly if you are adding to your user after the fact.
 
 set umaskfor each user first. (.basrc or .profile or .bash_profile)
 ```
@@ -201,7 +202,7 @@ Add to your bash file i.e. .bashrc
 PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH" 
 ```
 ###A - MySQL
-
+Still trying to figure out how to shar MySQL between mutiple users on the same account
 ```
 brew install mysql
 ```

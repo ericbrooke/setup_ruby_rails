@@ -290,8 +290,8 @@ view
 
 ##Optional setup iTerm
 
-# Setup profiles to open into the projects folder
-# ensure gemset correct
-# create preferred screen setup
-# Set unlimited scrollback in the Profiles -> Terminal tab
+* Setup profiles to open into the projects folder
+* ensure gemset correct
+* create preferred screen setup
+* Set unlimited scrollback in the Profiles -> Terminal tab
 

@@ -154,7 +154,7 @@ sudo chgrp -R staff /usr/local
 ```
 now each user who is in staff group can use brew install.
 
-If you intend to share brews amongst mutiple users you may have have to given the staff group permission to read/write and excute. For example if you are using mysql brew you may need to edit permissions in here /usr/local/var/mysql
+If you intend to share brews amongst mutiple users you may have have to given the staff group permission to read/write and excute. For example if you are using mysql brew you may need to edit permissions in here /usr/local/var/mysql to share mysql. Note that your database files are stored here so you may not wantt to share access to these amongst the group as well as the owner.
 
 ##B Add your keys to your new account
 

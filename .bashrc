@@ -1,3 +1,6 @@
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin" 
+
 # group write permission needed for homebrew
 # to write new brews if using mutiple accounts on the same machine
 umask 0002

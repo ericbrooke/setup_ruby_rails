@@ -56,6 +56,8 @@ fi
 ```
 ###Setup ruby version management
 
+You could use RVM or Bundler/rbenv. I am using RVM
+
 Install RVM - ensure to set PATH
 
 ```

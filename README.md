@@ -8,7 +8,8 @@ A - New Computer, first account
 
 B - Extra User account
 
-##Download iTerm
+## Optional - Download iTerm
+I prefer iTerm to Terminal
 
 http://iterm2.com
 

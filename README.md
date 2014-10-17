@@ -164,6 +164,19 @@ Check github is all good with:
 ```
 ssh -T git@github.com
 ```
+##B Setup for exisitng rails codebase
+
+create dev folder in the user folder
+
+git clone the code base into dev
+move into the codebase folder
+
+specify ruby and gemset you want before you bundle:
+```
+rvm use 2.1.3@gem_set_name --create
+bundle
+rake db:migrate
+```
 
 ##A - Install Redis
 ```

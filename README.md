@@ -1,11 +1,21 @@
 #Setup for new Mac OSX
 
-Install Xcode from the App store
+Install Xcode from the App store. Or ensure it is installed
+```
+xcode-select -p
+```
+If it responds with a path it is installed.
 
 Ensure that command line tools can access the shell environment:
 ```
-Install Xcode command line - gcc
+xcode-select --install
 ```
+
+Ensure it is installed
+```
+gcc --version
+```
+
 Setup your text editor to open from command line:
 
 *Do not run your text editor from your downloads folder move it to Applications folder*
@@ -60,6 +70,15 @@ echo "gem: --no-document" >> ~/.gemrc
 open .bashrc in a text editor and add:
 ```
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+```
+
+### If you alreadly have RVM installed
+
+If you already have RVM installed, update it to the latest version and install Ruby:
+```
+rvm get stable --autolibs=enable
+rvm install ruby
+rvm --default use ruby-2.1.3
 ```
 
 ###Install a package management system 

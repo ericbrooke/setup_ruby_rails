@@ -196,8 +196,10 @@ You will to download and setup a service for each
 
 ###A - Postgres
 Download [Postgres](http://postgresapp.com)
+Add to your bash file i.e. .bashrc
+```
 PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH" 
-
+```
 ###A - MySQL
 
 ```

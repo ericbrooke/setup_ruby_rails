@@ -1,3 +1,10 @@
+# group write permission needed for homebrew
+# to write new brews if using mutiple accounts on the same machine
+umask 0002
+
+# Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin
+
 # Define bash colours
 source ~/.bash_colours.bash
 

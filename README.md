@@ -150,6 +150,16 @@ now each user who is in staff group can use brew install
 
 You may need to copy over your id_rsa.pub and id_rsa found in the .ssh directory
 
+You may need change the permissions on these files:
+```
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/id_rsa
+chmod 600 ~/.ssh/id_rsa.pub
+
+```
+
+If you had forward agents setup in a config file you will also need to set it up.
+
 ##A - Install Redis
 ```
 Brew install redis

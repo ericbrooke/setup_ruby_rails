@@ -3,6 +3,7 @@
 There are two paths to follow one for a new computer and one for another account on the same computer which is alreadly being used for development.
 
 A - New Computer
+
 B - Extra User account
 
 ##A + B - Xcode

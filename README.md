@@ -1,5 +1,12 @@
 #Setup for new Mac OSX
 
+There are two paths to follow one for a new computer and one for another account on the same computer which is alreadly being used for development.
+
+A - New Computer
+B - Extra User account
+
+##A + B - Xcode
+
 Install Xcode from the App store. Or ensure it is installed
 ```
 xcode-select -p
@@ -15,6 +22,7 @@ Ensure it is installed
 ```
 gcc --version
 ```
+##A + B - Text Editor
 
 Setup your text editor to open from command line:
 
@@ -23,7 +31,7 @@ Setup your text editor to open from command line:
 1. Atom - Install Shell Commands from the Atom menu
 2. [Sublime](https://www.sublimetext.com/docs/2/osx_command_line.html)
 
-##Setup Git
+##A + B - Setup Git
 ```
 git config --global user.name "Your Real Name"
 git config --global user.email me@example.com
@@ -39,7 +47,7 @@ or for Sublime change the last line to
 git config --global core.editor "subl -n -w"
 ```
 
-###Setup one file for Bash PATH Management
+##A + B - Setup one file for Bash PATH Management
 
 There are three that can have opinions on this:
 * .profile
@@ -54,7 +62,34 @@ if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi
 ```
-###Setup ruby version management
+
+##A + B - Copy Bash features into a current user account
+
+Open and copy the contents from .bashrc file and .bash_profile
+
+*.bashrc*
+
+```
+# Define bash colours
+source ~/.bash_colours.bash
+
+# Setup Git completion
+source ~/.git-completion.bash
+
+# Modify command line format and colours
+export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \[\033[1;31m\](\$(~/.rvm/bin/rvm-prompt v p g s)) \$(__git_ps1 [%s]) \n→  \[\033[1;30m\]\$\[\033[0m\]"
+```
+
+*.bash_profile*
+```
+if [ -f ~/.bashrc ];
+then
+ source ~/.bashrc
+fi
+```
+I have my file with extra alias commands if you wish to add them.
+
+##A - Setup ruby version management
 
 You could use RVM or Bundler/rbenv. I am using RVM
 
@@ -74,7 +109,7 @@ open .bashrc in a text editor and add:
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 ```
 
-### If you alreadly have RVM installed
+##B - If you alreadly have RVM installed
 
 If you already have RVM installed, update it to the latest version and install Ruby:
 ```
@@ -83,7 +118,7 @@ rvm install ruby
 rvm --default use ruby-2.1.3
 ```
 
-###Install a package management system 
+##A - Install a package management system 
 
 For Mac OS X there are:
 [HomeBrew](http://brew.sh) and MacPorts
@@ -93,19 +128,36 @@ Install HomeBrew:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-###Install Redis
+### B - Setup Homebrew for mutiple user account use in Mac OS X
+
+set umaskfor each user first. (.basrc or .profile or .bash_profile)
+```
+umask 0002 # group write permission
+```
+
+then give group write permission to /usr/local recursively:
+```
+sudo chmod -R g+w /usr/local/
+```
+then change owner to staff
+```
+sudo chgrp -R staff /usr/local
+```
+now each user who is in staff group can use brew install
+
+##A - Install Redis
 ```
 Brew install redis
 ```
-###Install Database systems
+##A -Install Database systems
 
 You will to download and setup a service for each
 
-####Postgres
+###A - Postgres
 Download [Postgres](http://postgresapp.com)
 PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH" 
 
-####MySQL
+###A - MySQL
 
 ```
 brew install mysql
@@ -115,7 +167,7 @@ Remember this useful command for mysql
 brew info mysql
 ```
 
-#Setup for new rails app
+##A + B - Setup for new rails app
 
 ```
 gem install rails
@@ -194,44 +246,3 @@ def index
 end
 
 view
-
-#Copy Bash features into a current user account
-
-Open and copy the contents from .bashrc file and .bash_profile
-
-*.bashrc*
-
-```
-# Define bash colours
-source ~/.bash_colours.bash
-
-# Setup Git completion
-source ~/.git-completion.bash
-
-# Modify command line format and colours
-export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \[\033[1;31m\](\$(~/.rvm/bin/rvm-prompt v p g s)) \$(__git_ps1 [%s]) \n→  \[\033[1;30m\]\$\[\033[0m\]"
-```
-
-*.bash_profile*
-```
-if [ -f ~/.bashrc ];
-then
- source ~/.bashrc
-fi
-```
-### Setup Homebrew for mutiple user account use in Mac OS X
-
-set umaskfor each user first. (.basrc or .profile or .bash_profile)
-```
-umask 0002 # group write permission
-```
-
-then give group write permission to /usr/local recursively:
-```
-sudo chmod -R g+w /usr/local/
-```
-then change owner to staff
-```
-sudo chgrp -R staff /usr/local
-```
-now each user who is in staff group can use brew install

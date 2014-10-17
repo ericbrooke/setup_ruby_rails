@@ -152,7 +152,9 @@ then change owner to staff
 ```
 sudo chgrp -R staff /usr/local
 ```
-now each user who is in staff group can use brew install
+now each user who is in staff group can use brew install.
+
+If you intend to share brews amongst mutiple users you may have have to given the staff group permission to read/write and excute. For example if you are using mysql brew you may need to edit permissions in here /usr/local/var/mysql
 
 ##B Add your keys to your new account
 
@@ -202,7 +204,6 @@ Add to your bash file i.e. .bashrc
 PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH" 
 ```
 ###A - MySQL
-Still trying to figure out how to shar MySQL between mutiple users on the same account
 ```
 brew install mysql
 ```

@@ -219,4 +219,19 @@ then
  source ~/.bashrc
 fi
 ```
+### Setup Homebrew for mutiple user account use in Mac OS X
 
+set umaskfor each user first. (.basrc or .profile or .bash_profile)
+```
+umask 0002 # group write permission
+```
+
+then give group write permission to /usr/local recursively:
+```
+sudo chmod -R g+w /usr/local/
+```
+then change owner to staff
+```
+sudo chgrp -R staff /usr/local
+```
+now each user who is in staff group can use brew install

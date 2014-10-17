@@ -48,7 +48,7 @@ There are three that can have opinions on this:
 * 
 Mac OS X checks in this order  ~/.bash_profile, ~/.bash_login, and ~/.profile
 
-Use one file for additional paths open .bash_profile:
+Use one file for additional paths open .bash_profile and .profile and add the following:
 ```
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc

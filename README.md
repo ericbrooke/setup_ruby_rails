@@ -137,9 +137,9 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ```
 
 ### B - Setup Homebrew for mutiple user account use in Mac OS X
-This tricky and you may need to apply this rule in a number of places, particularly if you are adding to your user after the fact.
+This tricky and you may need to apply this rule in a number of places, particularly if you are adding to your user after the fact. Each user account will need to be admin, to be able each of packages.
 
-set umaskfor each user first. (.basrc or .profile or .bash_profile)
+set umask for for each user first. (.basrc or .profile or .bash_profile)
 ```
 umask 0002 # group write permission
 ```
@@ -155,6 +155,8 @@ sudo chgrp -R staff /usr/local
 now each user who is in staff group can use brew install.
 
 If you intend to share brews amongst mutiple users you may have have to given the staff group permission to read/write and excute. For example if you are using mysql brew you may need to edit permissions in here /usr/local/var/mysql to share mysql. Note that your database files are stored here so you may not wantt to share access to these amongst the group as well as the owner.
+
+To note that Homebrew stores downloads to Library/caches/.. and you will need to change permissions, as homebrew will try to read from this folder first before dowloading.
 
 ##B Add your keys to your new account
 

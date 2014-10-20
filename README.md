@@ -8,6 +8,8 @@ A - New Computer, first account
 
 B - Extra User account
 
+The most annoying thing about having seperate accounts is Music (aside of permissions). Guess that could be solved by putting your iTunes library in a shared folder..
+
 ## Optional - Download iTerm
 I prefer iTerm to Terminal
 

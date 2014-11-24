@@ -340,10 +340,14 @@ end
 
 view
 
-##Optional setup iTerm
+##Optional 
+
+###setup iTerm
 
 * Setup profiles to open into the projects folder
 * ensure gemset correct
 * create preferred screen setup
 * Set unlimited scrollback in the Profiles -> Terminal tab
 
+###setup atom
+[git integration](http://blog.atom.io/2014/03/13/git-integration.html)

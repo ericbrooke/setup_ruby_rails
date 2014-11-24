@@ -353,3 +353,9 @@ view
 [git integration](http://blog.atom.io/2014/03/13/git-integration.html)
 Packages I use
 * Linter Rubocop
+
+##Issues
+
+###nokogiri libiconv is missing
+
+This is an on-going problem with Mac OSX and the gem nokogiri https://github.com/sparklemotion/nokogiri/issues/442#issuecomment-55483013

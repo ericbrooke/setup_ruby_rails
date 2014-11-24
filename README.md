@@ -106,7 +106,7 @@ If you are going to use rbenv instead of rvm (Ruby Management) you will need to 
 ```
 To:
 ```
-\$(rbenv version)
+\$(rbenv version-name)
 ```
 
 *.bash_profile*

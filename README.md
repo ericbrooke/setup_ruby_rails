@@ -102,7 +102,7 @@ export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \
 
 If you are going to use rbenv instead of rvm (Ruby Management) you will need to change this line:
 ```
-(\$(~/.rvm/bin/rvm-prompt v p g s)
+\$(~/.rvm/bin/rvm-prompt v p g s)
 ```
 To:
 ```

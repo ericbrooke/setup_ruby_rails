@@ -69,6 +69,12 @@ There are three that can have opinions on this:
 * 
 Mac OS X checks in this order  ~/.bash_profile, ~/.bash_login, and ~/.profile
 
+If a new Mac User account none of these three file will exist.  Thus just create a .bashrc file.
+
+```
+touch .bashrc
+```
+
 Use one file for additional paths open .bash_profile and .profile and add the following:
 ```
 if [ -f ~/.bashrc ]; then

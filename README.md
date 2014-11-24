@@ -193,11 +193,6 @@ Install RVM - ensure to set PATH
 \curl -L https://get.rvm.io | bash -s stable --ruby
 ```
 
-Faster Gem download
-```
-echo "gem: --no-document" >> ~/.gemrc
-```
-
 open .bashrc in a text editor and add:
 ```
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
@@ -209,6 +204,16 @@ brew install rbenv ruby-build
 rbenv init
 ```
 
+Faster Gem download
+```
+echo "gem: --no-document" >> ~/.gemrc
+```
+
+### A + B Gems you will want
+
+```
+gem install bundler
+```
 
 ##B - If you alreadly have RVM installed
 

@@ -32,6 +32,9 @@ Ensure it is installed
 ```
 gcc --version
 ```
+
+Now open xcode and agree to the terms. You will need to do this once before proceeding.
+
 ##A + B - Text Editor
 
 Setup your text editor to open from command line:
@@ -99,35 +102,6 @@ fi
 ```
 I have my file with extra alias commands if you wish to add them.
 
-##A - Setup ruby version management
-
-You could use RVM or Bundler/rbenv. I am using RVM
-
-Install RVM - ensure to set PATH
-
-```
-\curl -L https://get.rvm.io | bash -s stable --ruby
-```
-
-Faster Gem download
-```
-echo "gem: --no-document" >> ~/.gemrc
-```
-
-open .bashrc in a text editor and add:
-```
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-```
-
-##B - If you alreadly have RVM installed
-
-If you already have RVM installed, update it to the latest version and install Ruby:
-```
-rvm get stable --autolibs=enable
-rvm install ruby
-rvm --default use ruby-2.1.3
-```
-
 ##A - Install a package management system 
 
 For Mac OS X there are:
@@ -191,6 +165,35 @@ rvm use 2.1.3@gem_set_name --create
 echo "gem: --no-document" >> ~/.gemrc
 bundle
 rake db:migrate
+```
+
+##A - Setup ruby version management
+
+You could use RVM or Bundler/rbenv. I am using RVM
+
+Install RVM - ensure to set PATH
+
+```
+\curl -L https://get.rvm.io | bash -s stable --ruby
+```
+
+Faster Gem download
+```
+echo "gem: --no-document" >> ~/.gemrc
+```
+
+open .bashrc in a text editor and add:
+```
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+```
+
+##B - If you alreadly have RVM installed
+
+If you already have RVM installed, update it to the latest version and install Ruby:
+```
+rvm get stable --autolibs=enable
+rvm install ruby
+rvm --default use ruby-2.1.3
 ```
 
 ##A - Install Redis

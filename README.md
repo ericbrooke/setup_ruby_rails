@@ -351,3 +351,5 @@ view
 
 ###setup atom
 [git integration](http://blog.atom.io/2014/03/13/git-integration.html)
+Packages I use
+* Linter Rubocop

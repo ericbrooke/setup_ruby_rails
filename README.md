@@ -297,17 +297,27 @@ git init
 
 ##check gemfile and setup gems
 
+This is my standard startup gemfile
 [Gemfile](gemfile)
 
-check groups
-add rspec-rails
-bundle
+[RSpec](https://github.com/rspec/rspec-rails) and [Capybara](https://github.com/jnicklas/capybara) for testing
 
+###RSpec
+For unit, integration testing
 ```
 rails generate rspec:install
 bundle binstubs rspec-core # for rails 4
 ```
-Annotate i.e. add schema comments
+###Capybara
+
+You will have to make a choice about JavaScript testing.
+
+I use Poltergist.
+```
+Homebrew: brew install phantomjs
+```
+###Annotate 
+This adds to each of your models comments with your database schema
 ```
 rails g annotate:install
 ```

@@ -282,8 +282,13 @@ rails new app_name --skip-test-unit
 ```
 ### For rails 4.0
 ```
-rails new app_name --skip-test-unit --database=postgresql
+rails new app_name --skip-test-unit --database=postgresql --git
 ```
+Want to understand options for a new rails app?
+```
+rails new --help
+```
+
 ##Setup for the rails application
 ```
 cd app_name

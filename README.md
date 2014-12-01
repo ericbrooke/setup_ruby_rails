@@ -323,6 +323,14 @@ rails g annotate:install
 ```
 Edit options I usuaully change the postion to after.  This is where it stores the comment schema
 
+###(Simplecov)[https://github.com/colszowka/simplecov]
+This is great for seening where you have tested in your code and where you have not
+
+Add into your spec_helper
+```
+require 'simplecov'
+SimpleCov.start
+```
 ##check database
 
 add the configuration into config/database.yml

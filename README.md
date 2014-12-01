@@ -297,6 +297,8 @@ git init
 
 check gemfile add database
 
+[Gemfile](gemfile)
+
 add the configuration into config/database.yml
 
 check groups

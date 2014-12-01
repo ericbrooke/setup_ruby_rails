@@ -308,22 +308,26 @@ For unit, integration testing
 rails generate rspec:install
 bundle binstubs rspec-core # for rails 4
 ```
-###Capybara
+###[Capybara](https://github.com/jnicklas/capybara)
 
 You will have to make a choice about JavaScript testing.
 
-I use Poltergist.
+I use [Poltergist](https://github.com/teampoltergeist/poltergeist)
 ```
-Homebrew: brew install phantomjs
+brew install phantomjs
 ```
-###Annotate 
+Add to your test file
+```
+Capybara.javascript_driver = :poltergeist
+```
+###[Annotate](https://github.com/ctran/annotate_models)
 This adds to each of your models comments with your database schema
 ```
 rails g annotate:install
 ```
 Edit options I usuaully change the postion to after.  This is where it stores the comment schema
 
-###(Simplecov)[https://github.com/colszowka/simplecov]
+###[Simplecov](https://github.com/colszowka/simplecov)
 This is great for seening where you have tested in your code and where you have not
 
 Add into your spec_helper

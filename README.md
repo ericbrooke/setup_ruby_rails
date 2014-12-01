@@ -295,11 +295,9 @@ cd app_name
 git init
 ```
 
-check gemfile add database
+##check gemfile and setup gems
 
 [Gemfile](gemfile)
-
-add the configuration into config/database.yml
 
 check groups
 add rspec-rails
@@ -307,8 +305,19 @@ bundle
 
 ```
 rails generate rspec:install
-bundle binstubs rspec-rails
+bundle binstubs rspec-core # for rails 4
 ```
+Annotate i.e. add schema comments
+```
+rails g annotate:install
+```
+Edit options I usuaully change the postion to after.  This is where it stores the comment schema
+
+##check database
+
+add the configuration into config/database.yml
+
+
 
 add into your spec_helper.rb:
 ```

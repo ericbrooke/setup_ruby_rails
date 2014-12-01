@@ -284,6 +284,10 @@ rails new app_name --skip-test-unit
 ```
 rails new app_name --skip-test-unit --database=postgresql --git
 ```
+For JavaScript front end you may not need turbolinks or jquery
+```
+--skip-javascript
+```
 Want to understand options for a new rails app?
 ```
 rails new --help

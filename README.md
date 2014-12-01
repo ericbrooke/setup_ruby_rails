@@ -339,14 +339,10 @@ SimpleCov.start
 
 add the configuration into config/database.yml
 
-
-
-add into your spec_helper.rb:
-```
-config.include Capybara::DSL
-```
-
 rename readme to readme.md
+```
+mv README.rdoc readme.md
+```
 edit READMe
 
 check .gitignore file

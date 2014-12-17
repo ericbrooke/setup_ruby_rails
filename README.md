@@ -260,6 +260,14 @@ Remember this useful command for mysql
 brew info mysql
 ```
 
+##A Node
+
+```
+brew install node
+```
+
+[npm](https://docs.npmjs.com) is the node package manager
+
 ##A + B - Setup for new rails app
 
 ```

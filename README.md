@@ -168,7 +168,7 @@ Check github is all good with:
 ```
 ssh -T git@github.com
 ```
-##B Setup for exisitng rails codebase
+##B Setup for existing rails codebase
 
 create dev folder in the user folder
 

@@ -49,8 +49,14 @@ Setup your text editor to open from command line:
 git config --global user.name "Your Real Name"
 git config --global user.email me@example.com
 git config -l --global
-
 ```
+It should respond with
+```
+user.name=Eric Brooke
+user.email=ericbrooke@mac.com
+```
+These are stored in your home directory in .gitconfig file.
+
 For Atom users:
 ```
 git config --global core.editor "atom --wait"

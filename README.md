@@ -81,8 +81,7 @@ If a new Mac User account none of these three file will exist.  Thus just create
 touch .bashrc
 atom .bashrc
 ```
-
-Use one file for additional paths open .bash_profile and .profile and add the following:
+copy the contents of .bashrc from the file.  Than create .bash_profile and add the following:
 ```
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc

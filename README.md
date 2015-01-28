@@ -176,6 +176,39 @@ Check github is all good with:
 ```
 ssh -T git@github.com
 ```
+##A Setup up connection with github
+
+If this is a new computer you will need to create a SSH key. These are the github [instructions](https://help.github.com/articles/generating-ssh-keys/)
+
+```
+ls -al ~/.ssh
+# Lists the files in your .ssh directory, if they exist
+```
+If this directory does not exit create a new ssh key
+```
+ssh-keygen -t rsa -C "your_email@example.com"
+# Creates a new ssh key, using the provided email as a label
+# Generating public/private rsa key pair.
+# Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
+```
+You can setup the key with a paraphrase if you wish, your ssh will be stronger and more secure
+```
+# start the ssh-agent in the background
+eval "$(ssh-agent -s)"
+# Agent pid 59566
+ssh-add ~/.ssh/id_rsa
+```
+Copy the public key 
+```
+pbcopy < ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+```
+Add it to your git hub account. Make sure all is good with
+```
+ssh -T git@github.com
+```
+[Error: Permission denied (publickey)](https://help.github.com/articles/error-permission-denied-publickey/)
+
 ##B Setup for existing rails codebase
 
 create dev folder in the user folder

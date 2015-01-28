@@ -211,7 +211,14 @@ OR Install [rbenv](https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x)
 brew install rbenv ruby-build
 rbenv init
 ```
+Install a version of ruby
+```
+# list all available versions:
+$ rbenv install -l
 
+# install a Ruby version:
+$ rbenv install 2.2.0
+```
 Faster Gem download
 ```
 echo "gem: --no-document" >> ~/.gemrc

@@ -222,6 +222,7 @@ $ rbenv install 2.2.0
 Set the Ruby to use.  You can do it via directory or via global
 ```
 rbenv global 2.2.0
+rbenv rehash #use this command after every new ruby install
 ```
 Faster Gem download
 ```

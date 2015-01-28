@@ -219,6 +219,10 @@ $ rbenv install -l
 # install a Ruby version:
 $ rbenv install 2.2.0
 ```
+Set the Ruby to use.  You can do it via directory or via global
+```
+rbenv global 2.2.0
+```
 Faster Gem download
 ```
 echo "gem: --no-document" >> ~/.gemrc

@@ -224,11 +224,12 @@ bundle
 rake db:migrate
 ```
 
-##A - Setup ruby version management
+##A - Setup ruby version management - RVM or rbenv - choose one
 
 You could use RVM or Bundler/rbenv. Here is a [comparsion](http://jonathan-jackson.net/rvm-and-rbenv)
 
-Install RVM - ensure to set PATH
+###RVM
+Install [RVM](http://rvm.io) - ensure to set PATH
 
 ```
 \curl -L https://get.rvm.io | bash -s stable --ruby
@@ -238,7 +239,8 @@ open .bashrc in a text editor and add:
 ```
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 ```
-OR Install [rbenv](https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x)
+###rbenv
+Install [rbenv](https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x)
 
 ```
 brew install rbenv ruby-build

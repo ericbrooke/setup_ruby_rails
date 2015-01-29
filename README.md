@@ -405,7 +405,7 @@ Edit options I usuaully change the postion to after.  This is where it stores th
 ###[Simplecov](https://github.com/colszowka/simplecov)
 This is great for seening where you have tested in your code and where you have not
 
-Add into your spec_helper
+Add into your spec/spec_helper
 ```
 require 'simplecov'
 SimpleCov.start

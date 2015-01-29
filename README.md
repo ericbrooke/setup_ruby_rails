@@ -381,6 +381,8 @@ For unit, integration testing
 rails generate rspec:install
 bundle binstubs rspec-core # for rails 4
 ```
+Your ./bin directory will get populated with binstubs for every gem in the bundle that has executables. However, you won't need most of those binstubs since developers generally just use a few like rake, rspec and similar.
+
 ###[Capybara](https://github.com/jnicklas/capybara)
 
 You will have to make a choice about JavaScript testing.

@@ -209,21 +209,6 @@ ssh -T git@github.com
 ```
 Common issue - [Error: Permission denied (publickey)](https://help.github.com/articles/error-permission-denied-publickey/)
 
-##B Setup for existing rails codebase
-
-create dev folder in the user folder
-
-git clone the code base into dev
-move into the codebase folder
-
-specify ruby and gemset you want before you bundle:
-```
-rvm use 2.1.3@gem_set_name --create
-echo "gem: --no-document" >> ~/.gemrc
-bundle
-rake db:migrate
-```
-
 ##A - Setup ruby version management - RVM or rbenv - choose one
 
 You could use RVM or Bundler/rbenv. Here is a [comparsion](http://jonathan-jackson.net/rvm-and-rbenv)
@@ -277,6 +262,21 @@ If you already have RVM installed, update it to the latest version and install R
 rvm get stable --autolibs=enable
 rvm install ruby
 rvm --default use ruby-2.1.3
+```
+
+##B Setup for existing rails codebase
+
+create dev folder in the user folder
+
+git clone the code base into dev
+move into the codebase folder
+
+specify ruby and gemset you want before you bundle:
+```
+rvm use 2.2.0@gem_set_name --create
+echo "gem: --no-document" >> ~/.gemrc
+bundle
+rake db:migrate
 ```
 
 ##A - Install Redis

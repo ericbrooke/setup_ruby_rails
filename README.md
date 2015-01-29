@@ -391,9 +391,9 @@ I use [Poltergist](https://github.com/teampoltergeist/poltergeist)
 ```
 brew install phantomjs
 ```
-Add to your test file
+Add to your test file -> spec/rails_helper.rb
 ```
-Capybara.javascript_driver = :poltergeist
+require 'capybara/poltergeist' 
 ```
 ###[Annotate](https://github.com/ctran/annotate_models)
 This adds to each of your models comments with your database schema

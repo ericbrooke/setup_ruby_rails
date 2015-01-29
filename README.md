@@ -158,7 +158,7 @@ If you intend to share brews amongst mutiple users you may have have to given th
 
 To note that Homebrew stores downloads to Library/caches/.. and you will need to change permissions, as homebrew will try to read from this folder first before dowloading.
 
-##B Add your keys to your new account
+##B - Add your keys to your new account
 
 You may need to copy over your id_rsa.pub and id_rsa found in the .ssh directory
 
@@ -176,7 +176,7 @@ Check github is all good with:
 ```
 ssh -T git@github.com
 ```
-##A Setup up connection with github
+##A - Setup up connection with github with a new account
 
 If this is a new computer you will need to create a SSH key. These are the github [instructions](https://help.github.com/articles/generating-ssh-keys/)
 
@@ -207,7 +207,7 @@ Add it to your git hub account. Make sure all is good with
 ```
 ssh -T git@github.com
 ```
-[Error: Permission denied (publickey)](https://help.github.com/articles/error-permission-denied-publickey/)
+Common issue - [Error: Permission denied (publickey)](https://help.github.com/articles/error-permission-denied-publickey/)
 
 ##B Setup for existing rails codebase
 

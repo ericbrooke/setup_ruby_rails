@@ -370,6 +370,11 @@ This is my standard startup gemfile
 
 [RSpec](https://github.com/rspec/rspec-rails) and [Capybara](https://github.com/jnicklas/capybara) for testing
 
+Run bundle, to dowload and install the gems in your gemfile
+```
+bundle
+```
+
 ###RSpec
 For unit, integration testing
 ```

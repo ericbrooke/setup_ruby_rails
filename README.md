@@ -287,6 +287,17 @@ Use to start up the redis server, it will take a window in your terminal.
 ```
 redis-server
 ```
+To test that redis is all good:
+```
+$redis-cli
+127.0.0.1:6379> ping
+PONG
+127.0.0.1:6379> set test hello
+OK
+127.0.0.1:6379> get test
+"hello"
+127.0.0.1:6379> quit
+```
 ##A -Install Database systems
 
 You will to download and setup a service for each

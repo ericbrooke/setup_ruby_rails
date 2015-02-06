@@ -308,7 +308,7 @@ Add to your bash file i.e. .bashrc
 ```
 PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH" 
 ```
-Its worth noting that the 9.4 is the version of the app, thus it will work if you have old 9.3 version installed.  
+Its worth noting that the 9.4 is the version of the app, thus it will NOT work if you have old 9.3 version installed.  
 ###A - MySQL
 ```
 brew install mysql

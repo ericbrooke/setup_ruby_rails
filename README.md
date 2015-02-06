@@ -281,7 +281,11 @@ rake db:migrate
 
 ##A - Install Redis
 ```
-Brew install redis
+brew install redis
+```
+Use to start up the redis server, it will take a window in your terminal.
+```
+redis-server
 ```
 ##A -Install Database systems
 

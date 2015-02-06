@@ -279,7 +279,7 @@ bundle
 rake db:migrate
 ```
 
-##A - Install Redis
+##A - Install [Redis](http://redis.io)
 ```
 brew install redis
 ```

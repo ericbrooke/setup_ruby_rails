@@ -13,7 +13,7 @@ The most annoying thing about having seperate accounts is Music (aside of permis
 ## Working on the command line
 You will need to use the Application Terminal found in the Applications/Utilities Folder
 
-## Optional - Download iTerm
+### Optional - Download iTerm
 I prefer iTerm to Terminal
 
 http://iterm2.com

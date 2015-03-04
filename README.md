@@ -10,12 +10,15 @@ B - Extra User account
 
 The most annoying thing about having seperate accounts is Music (aside of permissions). Guess that could be solved by putting your iTunes library in a shared folder..
 
+## Working on the command line
+You will need to use the Application Terminal found in the Applications/Utilities Folder
+
 ## Optional - Download iTerm
 I prefer iTerm to Terminal
 
 http://iterm2.com
 
-##A + B - Xcode
+## A + B - Xcode
 
 Install Xcode from the App store. Or ensure it is installed. Make sure it has being opened and and agreement is agreed.
 ```

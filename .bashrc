@@ -22,6 +22,7 @@ alias cd..="cd .."
 alias l="ls -al"
 alias lp="ls -p"
 alias h=history
+
 # for rails dev
 alias rakenuke="bin/rake db:{drop,create,migrate,seed,test:prepare}"
 

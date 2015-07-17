@@ -4,9 +4,9 @@ There are two paths to follow one for a new computer and one for another account
 
 Follow the steps for the desired setup:
 
-A - New Computer, first account
-
-B - Extra User account - Avoid this is if its your first time.
+* A - New Computer, first account
+OR
+* B - Extra User account - Avoid this is if its your first time.
 The most annoying thing about having separate accounts is Music (aside of permissions). Guess that could be solved by putting your iTunes library in a shared folder..
 
 ## Working on the command line

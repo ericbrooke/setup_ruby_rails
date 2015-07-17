@@ -1,6 +1,6 @@
 #Setup for new Mac OSX
 
-There are two paths to follow one for a new computer and one for another account on the same computer which is alreadly being used for development.
+There are two paths to follow one for a new computer and one for another account on the same computer which is already being used for development.
 
 Follow the steps for the desired setup:
 
@@ -8,7 +8,7 @@ A - New Computer, first account
 
 B - Extra User account
 
-The most annoying thing about having seperate accounts is Music (aside of permissions). Guess that could be solved by putting your iTunes library in a shared folder..
+The most annoying thing about having separate accounts is Music (aside of permissions). Guess that could be solved by putting your iTunes library in a shared folder..
 
 ## Optional - Download iTerm
 I prefer iTerm to Terminal
@@ -119,7 +119,7 @@ open .bashrc in a text editor and add:
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 ```
 
-##B - If you alreadly have RVM installed
+##B - If you already have RVM installed
 
 If you already have RVM installed, update it to the latest version and install Ruby:
 ```
@@ -138,10 +138,10 @@ Install HomeBrew:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-### B - Setup Homebrew for mutiple user account use in Mac OS X
+### B - Setup Homebrew for multiple user account use in Mac OS X
 This tricky and you may need to apply this rule in a number of places, particularly if you are adding to your user after the fact. Each user account will need to be admin, to be able each of packages.
 
-set umask for for each user first. (.basrc or .profile or .bash_profile)
+set umask for for each user first. (.bashrc or .profile or .bash_profile)
 ```
 umask 0002 # group write permission
 ```
@@ -156,9 +156,9 @@ sudo chgrp -R staff /usr/local
 ```
 now each user who is in staff group can use brew install.
 
-If you intend to share brews amongst mutiple users you may have have to given the staff group permission to read/write and excute. For example if you are using mysql brew you may need to edit permissions in here /usr/local/var/mysql to share mysql. Note that your database files are stored here so you may not wantt to share access to these amongst the group as well as the owner.
+If you intend to share brews amongst multiple users you may have have to given the staff group permission to read/write and execute. For example if you are using mysql brew you may need to edit permissions in here /usr/local/var/mysql to share mysql. Note that your database files are stored here so you may not want to share access to these amongst the group as well as the owner.
 
-To note that Homebrew stores downloads to Library/caches/.. and you will need to change permissions, as homebrew will try to read from this folder first before dowloading.
+To note that Homebrew stores downloads to Library/caches/.. and you will need to change permissions, as homebrew will try to read from this folder first before downloading.
 
 ##B Add your keys to your new account
 
@@ -178,7 +178,7 @@ Check github is all good with:
 ```
 ssh -T git@github.com
 ```
-##B Setup for exisitng rails codebase
+##B Setup for existing rails codebase
 
 create dev folder in the user folder
 

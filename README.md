@@ -6,8 +6,7 @@ Follow the steps for the desired setup:
 
 A - New Computer, first account
 
-B - Extra User account
-
+B - Extra User account - Avoid this is if its your first time.
 The most annoying thing about having separate accounts is Music (aside of permissions). Guess that could be solved by putting your iTunes library in a shared folder..
 
 ## Working on the command line
@@ -19,6 +18,8 @@ I prefer iTerm to Terminal
 http://iterm2.com
 
 ## A + B - Xcode
+
+Why do I need it? Cos Apple did not install this for you and annoying things will happen later without it.
 
 Install Xcode from the App store. Or ensure it is installed. Make sure it has being opened and and agreement is agreed.
 ```
@@ -38,7 +39,9 @@ gcc --version
 
 Now open xcode and agree to the terms. You will need to do this once before proceeding.
 
-##A + B - Text Editor
+##A + B - Text Editor/IDE
+
+Why do I need it? - You need someting to write your code in something, pen and paper may allow you but the excution will be a bitch.
 
 Setup your text editor to open from command line:
 
@@ -48,6 +51,9 @@ Setup your text editor to open from command line:
 2. [Sublime](https://www.sublimetext.com/docs/2/osx_command_line.html)
 
 ##A + B - Setup Git
+
+Why do I need it? - Git is your Version control, you need it to rollback code to earlier version and allows you to experiement with confidence.  It is also essential for work with teams and GitHub.
+
 ```
 git config --global user.name "Your Real Name"
 git config --global user.email me@example.com
@@ -70,6 +76,8 @@ git config --global core.editor "subl -n -w"
 ```
 
 ##A + B - Setup one file for Bash PATH Management
+
+Why do I need it? Having one place to update and change is really helpful :-)
 
 There are three that can have opinions on this:
 * .bash_profile
@@ -94,6 +102,8 @@ fi
 ```
 
 ##A + B - Copy Bash features into a current user account
+
+Why do I need it? Consider this is a script of things you want on your BASH (Terminal Command Line), auto completition for git branch names and filenames, colours, which git branch you are in and what ruby version are really useful.
 
 Open and copy the contents from .bashrc file and .bash_profile
 
@@ -137,6 +147,8 @@ fi
 I have my file with extra alias commands if you wish to add them.
 
 ##A - Install a package management system
+
+Why do I need it? There will be many extra things as a developer you will need to install later whether it be your ruby management system, redis, imagemagick.
 
 For Mac OS X there are:
 [HomeBrew](http://brew.sh) and MacPorts
@@ -187,6 +199,8 @@ Check github is all good with:
 ssh -T git@github.com
 ```
 ##A - Setup up connection with github with a new account
+
+Why do I need it? So your computer can talk to Github and push/pull code.
 
 If this is a new computer you will need to create a SSH key. These are the github [instructions](https://help.github.com/articles/generating-ssh-keys/)
 

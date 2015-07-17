@@ -1,6 +1,6 @@
 #Setup for new Mac OSX
 
-There are two paths to follow one for a new computer and one for another account on the same computer which is alreadly being used for development.
+There are two paths to follow one for a new computer and one for another account on the same computer which is already being used for development.
 
 Follow the steps for the desired setup:
 
@@ -8,7 +8,7 @@ A - New Computer, first account
 
 B - Extra User account
 
-The most annoying thing about having seperate accounts is Music (aside of permissions). Guess that could be solved by putting your iTunes library in a shared folder..
+The most annoying thing about having separate accounts is Music (aside of permissions). Guess that could be solved by putting your iTunes library in a shared folder..
 
 ## Working on the command line
 You will need to use the Application Terminal found in the Applications/Utilities Folder
@@ -75,7 +75,7 @@ There are three that can have opinions on this:
 * .profile
 * .bash_profile
 * .bashrc
-* 
+*
 Mac OS X checks in this order  ~/.bash_profile, ~/.bash_login, and ~/.profile
 
 If a new Mac User account none of these three file will exist.  Thus just create a .bashrc file.
@@ -120,7 +120,12 @@ To:
 \$(rbenv version-name)
 ```
 
+
 *.bash_profile*
+=======
+##B - If you already have RVM installed
+
+If you already have RVM installed, update it to the latest version and install Ruby:
 ```
 if [ -f ~/.bashrc ];
 then
@@ -129,7 +134,7 @@ fi
 ```
 I have my file with extra alias commands if you wish to add them.
 
-##A - Install a package management system 
+##A - Install a package management system
 
 For Mac OS X there are:
 [HomeBrew](http://brew.sh) and MacPorts
@@ -139,10 +144,10 @@ Install HomeBrew:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-### B - Setup Homebrew for mutiple user account use in Mac OS X
+### B - Setup Homebrew for multiple user account use in Mac OS X
 This tricky and you may need to apply this rule in a number of places, particularly if you are adding to your user after the fact. Each user account will need to be admin, to be able each of packages.
 
-set umask for for each user first. (.basrc or .profile or .bash_profile)
+set umask for for each user first. (.bashrc or .profile or .bash_profile)
 ```
 umask 0002 # group write permission
 ```
@@ -157,9 +162,9 @@ sudo chgrp -R staff /usr/local
 ```
 now each user who is in staff group can use brew install.
 
-If you intend to share brews amongst mutiple users you may have have to given the staff group permission to read/write and excute. For example if you are using mysql brew you may need to edit permissions in here /usr/local/var/mysql to share mysql. Note that your database files are stored here so you may not wantt to share access to these amongst the group as well as the owner.
+If you intend to share brews amongst multiple users you may have have to given the staff group permission to read/write and execute. For example if you are using mysql brew you may need to edit permissions in here /usr/local/var/mysql to share mysql. Note that your database files are stored here so you may not want to share access to these amongst the group as well as the owner.
 
-To note that Homebrew stores downloads to Library/caches/.. and you will need to change permissions, as homebrew will try to read from this folder first before dowloading.
+To note that Homebrew stores downloads to Library/caches/.. and you will need to change permissions, as homebrew will try to read from this folder first before downloading.
 
 ##B - Add your keys to your new account
 
@@ -201,7 +206,7 @@ eval "$(ssh-agent -s)"
 # Agent pid 59566
 ssh-add ~/.ssh/id_rsa
 ```
-Copy the public key 
+Copy the public key
 ```
 pbcopy < ~/.ssh/id_rsa.pub
 # Copies the contents of the id_rsa.pub file to your clipboard
@@ -309,7 +314,7 @@ You will to download and setup a service for each
 Download [Postgres](http://postgresapp.com)
 Add to your bash file i.e. .bashrc
 ```
-PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH" 
+PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 ```
 Its worth noting that the 9.4 is the version of the app, thus it will NOT work if you have old 9.3 version installed.  
 ###A - MySQL
@@ -411,7 +416,7 @@ brew install phantomjs
 ```
 Add to your test file -> spec/rails_helper.rb
 ```
-require 'capybara/poltergeist' 
+require 'capybara/poltergeist'
 ```
 ###[Annotate](https://github.com/ctran/annotate_models)
 This adds to each of your models comments with your database schema
@@ -467,7 +472,7 @@ end
 
 view
 
-##Optional 
+##Optional
 
 ###setup iTerm
 

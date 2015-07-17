@@ -19,7 +19,7 @@ http://iterm2.com
 
 ## A + B - Xcode
 
-Why do I need it? Cos Apple did not install this for you and annoying things will happen later without it.
+_Why do I need it?_ Cos Apple did not install this for you and annoying things will happen later without it.
 
 Install Xcode from the App store. Or ensure it is installed. Make sure it has being opened and and agreement is agreed.
 ```

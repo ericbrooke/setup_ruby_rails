@@ -4,9 +4,9 @@ There are two paths to follow one for a new computer and one for another account
 
 Follow the steps for the desired setup:
 
-* A - New Computer, first account
+* A - *New Computer*, first account
 OR
-* B - Extra User account - Avoid this is if its your first time.
+* B - *Extra User account* - Avoid this is if its your first time.
 The most annoying thing about having separate accounts is Music (aside of permissions). Guess that could be solved by putting your iTunes library in a shared folder..
 
 ## Working on the command line
@@ -41,7 +41,7 @@ Now open xcode and agree to the terms. You will need to do this once before proc
 
 ##A + B - Text Editor/IDE
 
-Why do I need it? - You need someting to write your code in something, pen and paper may allow you but the excution will be a bitch.
+_Why do I need it?_ - You need someting to write your code in something, pen and paper may allow you but the excution will be a bitch.
 
 Setup your text editor to open from command line:
 
@@ -77,7 +77,7 @@ git config --global core.editor "subl -n -w"
 
 ##A + B - Setup one file for Bash PATH Management
 
-Why do I need it? Having one place to update and change is really helpful :-)
+_Why do I need it?_ Having one place to update and change is really helpful, rather then mutiple files  :-)
 
 There are three that can have opinions on this:
 * .bash_profile
@@ -103,7 +103,7 @@ fi
 
 ##A + B - Copy Bash features into a current user account
 
-Why do I need it? Consider this is a script of things you want on your BASH (Terminal Command Line), auto completition for git branch names and filenames, colours, which git branch you are in and what ruby version are really useful.
+_Why do I need it?_ Consider this is a script of things you want on your BASH (Terminal Command Line), auto completition for git branch names and filenames, colours, which git branch you are in and what ruby version are really useful.
 
 Open and copy the contents from .bashrc file and .bash_profile
 
@@ -148,7 +148,7 @@ I have my file with extra alias commands if you wish to add them.
 
 ##A - Install a [Package Management System](https://en.wikipedia.org/wiki/Package_manager)
 
-Why do I need it? There will be many extra things as a developer you will need to install later whether it be your ruby management system, redis, imagemagick.
+_Why do I need it?_ There will be many extra things as a developer you will need to install later whether it be your ruby management system, redis, imagemagick.
 
 For Mac OS X there are:
 [HomeBrew](http://brew.sh) and MacPorts
@@ -200,7 +200,7 @@ ssh -T git@github.com
 ```
 ##A - Setup up connection with (Github)[www.github.com] with a new account
 
-Why do I need it? So your computer can talk to Github and push/pull code.
+_Why do I need it?_ So your computer can talk to Github and push/pull code.
 
 If this is a new computer you will need to create a SSH key. These are the github [instructions](https://help.github.com/articles/generating-ssh-keys/)
 
@@ -235,7 +235,9 @@ Common issue - [Error: Permission denied (publickey)](https://help.github.com/ar
 
 ##A - Setup ruby version management - RVM or rbenv - choose one
 
-You could use RVM or Bundler/rbenv. Here is a [comparsion](http://jonathan-jackson.net/rvm-and-rbenv)
+_Why do it need it?_ In your future there are likely to be several versions of ruby on your machine, maybe with different Gem sets for each.
+
+_Options_ You could use RVM or Bundler/rbenv. Here is a [comparsion](http://jonathan-jackson.net/rvm-and-rbenv)
 
 ###RVM
 Install [RVM](http://rvm.io) - ensure to set PATH
@@ -274,7 +276,7 @@ echo "gem: --no-document" >> ~/.gemrc
 ```
 
 ### A + B Gems you will want
-
+_Why do I need it?_ You are going to use a lot of Gems (consider them as software alreadly written for you i.e. software libraries) and then you need to manage the independicies between the Gems and which ones are installed. Avoid this (well to some degree) with lovely [Bundler](http://bundler.io)
 ```
 gem install bundler
 ```

@@ -72,11 +72,13 @@ git config --global core.editor "subl -n -w"
 ##A + B - Setup one file for Bash PATH Management
 
 There are three that can have opinions on this:
-* .profile
 * .bash_profile
+* .profile
 * .bashrc
-*
+
 Mac OS X checks in this order  ~/.bash_profile, ~/.bash_login, and ~/.profile
+
+Note ~ means your User folder i.e. /Users/ericbrooke. If you are not sure which user directory you are in use the pwd command.
 
 If a new Mac User account none of these three file will exist.  Thus just create a .bashrc file.
 

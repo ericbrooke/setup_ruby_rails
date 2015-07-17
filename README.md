@@ -146,7 +146,7 @@ fi
 ```
 I have my file with extra alias commands if you wish to add them.
 
-##A - Install a package management system
+##A - Install a [Package Management System](https://en.wikipedia.org/wiki/Package_manager)
 
 Why do I need it? There will be many extra things as a developer you will need to install later whether it be your ruby management system, redis, imagemagick.
 

@@ -198,7 +198,7 @@ Check github is all good with:
 ```
 ssh -T git@github.com
 ```
-##A - Setup up connection with github with a new account
+##A - Setup up connection with (Github)[www.github.com] with a new account
 
 Why do I need it? So your computer can talk to Github and push/pull code.
 

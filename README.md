@@ -229,7 +229,9 @@ Copy the public key
 pbcopy < ~/.ssh/id_rsa.pub
 # Copies the contents of the id_rsa.pub file to your clipboard
 ```
-Add it to your git hub account. Make sure all is good with
+Add it to your git hub account, on their wwebsite. In your Settings -> SSH Keys
+
+Make sure all is good with with your computer talking to github.
 ```
 ssh -T git@github.com
 ```

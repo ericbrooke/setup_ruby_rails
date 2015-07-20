@@ -126,16 +126,6 @@ export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \
 
 ```
 
-If you are going to use rbenv instead of rvm (Ruby Management) you will need to change this part of the line:
-```
-\$(~/.rvm/bin/rvm-prompt v p g s)
-```
-To:
-```
-\$(rbenv version-name)
-```
-
-
 *.bash_profile*
 =======
 ##B - If you already have RVM installed
@@ -280,6 +270,18 @@ rbenv rehash #use this command after every new ruby install
 Faster Gem download
 ```
 echo "gem: --no-document" >> ~/.gemrc
+```
+
+### Add ruby version to command line
+In your .bashrc file you have two commented out lines which give you this for both RVM and rbenv. Choose which one you want and comment out or delete the others
+```
+# Modify command line format and colours 
+# with no ruby version
+export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \[\033[1;31m\] \$(__git_ps1 [%s]) \n→  \[\033[1;30m\]\$\[\033[0m\]"
+# for rvm
+# export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \[\033[1;31m\](\$(~/.rvm/bin/rvm-prompt v p g s)) \$(__git_ps1 [%s]) \n→  \[\033[1;30m\]\$\[\033[0m\]"
+# OR use the following for rbenv
+#export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \[\033[1;31m\](\$(rbenv version-name)) \$(__git_ps1 [%s]) \n  \[\033[1;30m\]\$\[\033[0m\]"
 ```
 
 ### A + B Gems you will want

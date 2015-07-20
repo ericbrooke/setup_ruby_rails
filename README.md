@@ -267,7 +267,7 @@ Set the Ruby to use.  You can do it via directory or via global
 rbenv global 2.2.0
 rbenv rehash #use this command after every new ruby install
 ```
-add the following to your .bashrc file
+add the following to your .bashrc file. If you miss this step it will state you do not have permissions
 ```
 eval "$(rbenv init -)"
 ```

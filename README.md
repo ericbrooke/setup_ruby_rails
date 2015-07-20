@@ -208,14 +208,16 @@ If this is a new computer you will need to create a SSH key. These are the githu
 ls -al ~/.ssh
 # Lists the files in your .ssh directory, if they exist
 ```
-If this directory does not exit create a new ssh key
+If this directory does not exit create a new ssh key. You can setup the key with a paraphrase if you wish, your ssh will be stronger and more secure.
+
 ```
 ssh-keygen -t rsa -C "your_email@example.com"
 # Creates a new ssh key, using the provided email as a label
 # Generating public/private rsa key pair.
 # Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
 ```
-You can setup the key with a paraphrase if you wish, your ssh will be stronger and more secure
+
+Check to see if your ssh works
 ```
 # start the ssh-agent in the background
 eval "$(ssh-agent -s)"

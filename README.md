@@ -94,7 +94,7 @@ If a new Mac User account none of these three file will exist.  Thus just create
 touch .bashrc
 atom .bashrc
 ```
-copy the contents of .bashrc from the file.  Than create .bash_profile and add the following:
+copy the below contents of .bashrc from the file.  Than create .bash_profile and add the following:
 ```
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc

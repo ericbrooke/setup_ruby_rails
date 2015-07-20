@@ -8,12 +8,15 @@ source ~/.bash_colours.bash
 # Setup Git completion
 source ~/.git-completion.bash
 
-# Bash prompt -> Modify command line format and colours use for rvm
-export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \[\033[1;31m\](\$(~/.rvm/bin/rvm-prompt v p g s)) \$(__git_ps1 [%s]) \n  \[\033[1;30m\]\$\[\033[0m\]"
+# Bash prompt -> Modify command line format and colours 
+# with no ruby version or ruby management systems
+export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \[\033[1;31m\] \$(__git_ps1 [%s]) \n  \[\033[1;30m\]\$\[\033[0m\]"
 
-# OR use the following for rbenv
+# for use with rvm
+#export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \[\033[1;31m\](\$(~/.rvm/bin/rvm-prompt v p g s)) \$(__git_ps1 [%s]) \n  \[\033[1;30m\]\$\[\033[0m\]"
+
+# for use with rbenv
 #export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \[\033[1;31m\](\$(rbenv version-name)) \$(__git_ps1 [%s]) \n  \[\033[1;30m\]\$\[\033[0m\]"
-
 
 # alias
 

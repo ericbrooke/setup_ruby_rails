@@ -32,7 +32,7 @@ Ensure that command line tools can access the shell environment:
 xcode-select --install
 ```
 
-Ensure it is installed
+Ensure gcc is installed, it is the C compiler which you will need to build your Ruby and stuff
 ```
 gcc --version
 ```

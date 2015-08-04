@@ -12,12 +12,10 @@ The most annoying thing about having separate accounts is Music (aside of permis
 ## Working on the command line
 You will need to use the Application Terminal found in the Applications/Utilities Folder
 
-### Optional - Download iTerm
-I prefer iTerm to Terminal
+### Step 1 - Identify your access to Unix core
+Your computer will have the application Terminal installed. I use [iTerm](http://iterm2.com), download it and move it to the Apllication folder.
 
-http://iterm2.com
-
-## A + B - Xcode
+## Step 2 - A + B - Xcode
 
 _Why do I need it?_ Cos Apple did not install this for you and annoying things will happen later without it.
 
@@ -39,7 +37,7 @@ gcc --version
 
 Now open xcode and agree to the terms. You will need to do this once before proceeding.
 
-##A + B - Text Editor/IDE
+## Step 3 - A + B - Text Editor/IDE
 
 _Why do I need it?_ - You need someting to write your code in something, pen and paper may allow you but the excution will be a bitch.
 
@@ -50,7 +48,7 @@ Setup your text editor to open from command line (I like Atom):
 1. [Atom](https://atom.io) - Install Shell Commands from the Atom menu
 2. [Sublime](https://www.sublimetext.com/docs/2/osx_command_line.html)
 
-##A + B - Setup Git
+## Step 4 - A + B - Setup Git
 
 Why do I need it? - Git is your Version control, you need it to rollback code to earlier version and allows you to experiement with confidence.  It is also essential for work with teams and GitHub.
 
@@ -75,7 +73,7 @@ or for Sublime change the last line to
 git config --global core.editor "subl -n -w"
 ```
 
-##A + B - Setup one file for Bash PATH Management
+## Step 5 - A + B - Setup one file for Bash PATH Management
 
 _Why do I need it?_ Having one place to update and change is really helpful, rather then mutiple files  :-)
 
@@ -101,7 +99,7 @@ if [ -f ~/.bashrc ]; then
 fi
 ```
 
-##A + B - Copy Bash features into a current user account
+## Step 6 - A + B - Copy Bash features into a current user account
 
 _Why do I need it?_ Consider this is a script of things you want on your BASH (Terminal Command Line), auto completition for git branch names and filenames, colours, which git branch you are in and what ruby version are really useful.
 
@@ -126,9 +124,7 @@ export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \
 
 ```
 
-*.bash_profile*
-=======
-##B - If you already have RVM installed
+## Step 7 - B Only - If you already have RVM installed
 
 If you already have RVM installed, update it to the latest version and install Ruby:
 ```
@@ -139,7 +135,7 @@ fi
 ```
 I have my file with extra alias commands if you wish to add them.
 
-##A - Install a [Package Management System](https://en.wikipedia.org/wiki/Package_manager)
+## Step 8 - A - Install a [Package Management System](https://en.wikipedia.org/wiki/Package_manager)
 
 _Why do I need it?_ There will be many extra things as a developer you will need to install later whether it be your ruby management system, redis, imagemagick.
 
@@ -151,7 +147,7 @@ Install HomeBrew:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-### B - Setup Homebrew for multiple user account use in Mac OS X
+### Step 9 - B - Setup Homebrew for multiple user account use in Mac OS X
 This tricky and you may need to apply this rule in a number of places, particularly if you are adding to your user after the fact. Each user account will need to be admin, to be able each of packages.
 
 set umask for for each user first. (.bashrc or .profile or .bash_profile)
@@ -173,7 +169,7 @@ If you intend to share brews amongst multiple users you may have have to given t
 
 To note that Homebrew stores downloads to Library/caches/.. and you will need to change permissions, as homebrew will try to read from this folder first before downloading.
 
-##B - Add your keys to your new account
+## Step 10 - B - Add your keys to your new account
 
 You may need to copy over your id_rsa.pub and id_rsa found in the .ssh directory
 
@@ -191,7 +187,7 @@ Check github is all good with:
 ```
 ssh -T git@github.com
 ```
-##A - Setup up connection with (Github)[www.github.com] with a new account
+## Step 11 - A - Setup up connection with (Github)[www.github.com] with a new account
 
 _Why do I need it?_ So your computer can talk to Github and push/pull code.
 
@@ -230,7 +226,7 @@ ssh -T git@github.com
 ```
 Common issue - [Error: Permission denied (publickey)](https://help.github.com/articles/error-permission-denied-publickey/)
 
-##A - Setup ruby version management - RVM or rbenv - choose one
+## Step 12 - A - Setup ruby version management - RVM or rbenv - choose one
 
 _Why do it need it?_ In your future there are likely to be several versions of ruby on your machine, maybe with different Gem sets for each.
 
@@ -288,13 +284,13 @@ export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \
 #export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \[\033[1;31m\](\$(rbenv version-name)) \$(__git_ps1 [%s]) \n  \[\033[1;30m\]\$\[\033[0m\]"
 ```
 
-### A + B Gems you will want
+### Step 13 - A + B Gems you will want
 _Why do I need it?_ You are going to use a lot of Gems (consider them as software alreadly written for you i.e. software libraries) and then you need to manage the independicies between the Gems and which ones are installed. Avoid this (well to some degree) with lovely [Bundler](http://bundler.io)
 ```
 gem install bundler
 ```
 
-##B - If you alreadly have RVM installed
+## Step 14 - B - If you alreadly have RVM installed
 
 If you already have RVM installed, update it to the latest version and install Ruby:
 ```
@@ -303,7 +299,7 @@ rvm install ruby
 rvm --default use ruby-2.1.3
 ```
 
-##B Setup for existing rails codebase
+## Step 15 - B Setup for existing rails codebase
 
 create dev folder in the user folder
 
@@ -318,7 +314,7 @@ bundle
 rake db:migrate
 ```
 
-##A - Install [Redis](http://redis.io)
+## Step 16 - A - Optional Install of [Redis](http://redis.io)
 ```
 brew install redis
 ```
@@ -337,7 +333,7 @@ OK
 "hello"
 127.0.0.1:6379> quit
 ```
-##A -Install Database systems
+## Step 17 - A -Install Database systems
 
 You will to download and setup a service for each
 
@@ -370,7 +366,7 @@ Remember this useful command for mysql
 brew info mysql
 ```
 
-##A Node
+## Step 18 - A - Optional install of Node
 
 ```
 brew install node
@@ -378,7 +374,7 @@ brew install node
 
 [npm](https://docs.npmjs.com) is the node package manager
 
-##A + B - Setup for new rails app
+## Step 19 - A + B - Setup for new rails app
 
 ```
 gem install rails

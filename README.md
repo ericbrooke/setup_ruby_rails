@@ -103,6 +103,22 @@ fi
 
 _Why do I need it?_ Consider this is a script of things you want on your BASH (Terminal Command Line), auto completition for git branch names and filenames, colours, which git branch you are in and what ruby version are really useful.
 
+Copy two files from this repo:
+* .bash_colours.bash
+* .git-completion.bash
+
+When you copy them ensure you look at the RAW version, so extra whitespace or newlines will sneek in.
+
+To create a new file just type:
+```
+touch .bash_colours.bash
+atom .bash_colours.bash
+```
+Copy contents of .bash_colours.bash from github this repo (scroll to the top) and paste it into your file in atom.
+
+Repeat this process for .git-completion.bash
+
+
 Open and copy the contents from .bashrc file and .bash_profile
 
 *.bashrc*

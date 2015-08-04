@@ -43,11 +43,11 @@ Now open xcode and agree to the terms. You will need to do this once before proc
 
 _Why do I need it?_ - You need someting to write your code in something, pen and paper may allow you but the excution will be a bitch.
 
-Setup your text editor to open from command line:
+Setup your text editor to open from command line (I like Atom):
 
 *Do not run your text editor from your downloads folder move it to Applications folder*
 
-1. Atom - Install Shell Commands from the Atom menu
+1. [Atom](https://atom.io) - Install Shell Commands from the Atom menu
 2. [Sublime](https://www.sublimetext.com/docs/2/osx_command_line.html)
 
 ##A + B - Setup Git

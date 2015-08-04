@@ -111,10 +111,10 @@ When you copy them ensure you look at the RAW version, so extra whitespace or ne
 
 To create a new file just type:
 ```
-touch .bash_colours.bash
-atom .bash_colours.bash
+touch ~/.bash_colours.bash
+atom ~/.bash_colours.bash
 ```
-Copy contents of .bash_colours.bash from github this repo (scroll to the top) and paste it into your file in atom.
+Copy contents of .bash_colours.bash from github this repo (scroll to the top) and paste it into your file in atom. The ~/ is to ensure that is in the top directory for your user account.
 
 Repeat this process for .git-completion.bash
 
@@ -317,7 +317,7 @@ rvm --default use ruby-2.1.3
 
 ## Step 15 - B Setup for existing rails codebase
 
-create dev folder in the user folder
+Create dev (lowercase) folder in the user folder.  This will be use to store all your coding projects
 
 git clone the code base into dev
 move into the codebase folder

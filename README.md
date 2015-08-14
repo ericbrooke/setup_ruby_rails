@@ -52,7 +52,7 @@ Setup your text editor to open from command line (I like Atom):
 
 Choose which, install it and ensure it is in teh Application folder
 1. [Atom](https://atom.io) - Install Shell Commands from the Atom menu
-2. [Sublime](https://www.sublimetext.com/docs/2/osx_command_line.html)
+1. [Sublime](https://www.sublimetext.com/docs/2/osx_command_line.html)
 
 ## Step 4 - A + B - Setup Git
 

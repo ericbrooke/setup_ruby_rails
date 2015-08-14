@@ -99,7 +99,6 @@ If a new Mac User account none of these three file will exist.  Thus just create
 touch .bashrc
 atom .bashrc
 ```
-copy the below contents of .bashrc from the file, in this repo into your file in atom.  When you open the file in github, click on the RAW button, then select All (Command A) and then paste (Command V) in your file. Using RAW avois and newline/ CR mischeif
 
 Than you will need create .bash_profile and add the following:
 ```
@@ -123,10 +122,13 @@ To create a new file just type:
 touch ~/.bash_colours.bash
 atom ~/.bash_colours.bash
 ```
-Copy contents of .bash_colours.bash from github this repo (scroll to the top) and paste it into your file in atom. The ~/ is to ensure that is in the top directory for your user account.
+Copy contents of .bash_colours.bash from github this repo (scroll to the top) and paste it into your file in atom. The ~/ is to ensure that is in the top directory for your user account.  When you open the file in github, click on the RAW button, then select All (Command A), Copy (Command C) and then paste (Command V) in *YOUR* file. Using RAW avoids and newline/ CR mischeif
 
 Repeat this process for .git-completion.bash
-
+```
+touch ~/.git-completion.bash
+atom ~/.git-completion.bash
+```
 
 Open and copy the contents from .bashrc file and .bash_profile
 

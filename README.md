@@ -50,7 +50,8 @@ _Why do I need it?_ - You need someting to write your code in something, pen and
 
 Setup your text editor to open from command line (I like Atom):
 
-Choose which, install it and ensure it is in teh Application folder
+Choose which, install it and ensure it is in teh Application folder, then setup command line access (i.e. from your iTerm or Terminal):
+
 1. [Atom](https://atom.io) - Install Shell Commands from the Atom menu
 1. [Sublime](https://www.sublimetext.com/docs/2/osx_command_line.html)
 

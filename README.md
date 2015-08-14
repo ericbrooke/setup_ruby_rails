@@ -359,7 +359,15 @@ Create dev (lowercase) folder in the user folder.  This will be use to store all
 You will need to download the [github Application](https://desktop.github.com). Move it into your Applications folder.
 Ensure you save into your "dev" folder. You will be asked details for your github account.
 
-Check the readme of the application usually README.MD to install all the things that application needs
+Check the readme of the application usually README.MD to install all the things that application needs. The basics will be:
+```
+bundle
+```
+if it does not know where bundler is you have a problem with your Ruby Management for rbenv run - rbenv rehash
+```
+rakenuke
+```
+This will create your database, migrate and seed.
 
 ## Step 15 - B Setup for existing rails codebase
 

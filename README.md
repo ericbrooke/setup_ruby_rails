@@ -12,7 +12,7 @@ The most annoying thing about having separate accounts is Music (aside of permis
 ## Working on the command line
 You will need to use the Application Terminal found in the Applications/Utilities Folder
 
-### Step 1 - Identify your access to Unix core
+## Step 1 - Identify your access to Unix core
 Your computer will have the application Terminal installed. I use [iTerm](http://iterm2.com), download it and move it to the Apllication folder.
 
 ## Step 2 - A + B - Xcode
@@ -352,6 +352,14 @@ rvm get stable --autolibs=enable
 rvm install ruby
 rvm --default use ruby-2.1.3
 ```
+## Step 15 - A Setup for existing rails codebase
+
+Create dev (lowercase) folder in the user folder.  This will be use to store all your coding projects
+
+You will need to download the [github Application](https://desktop.github.com). Move it into your Applications folder.
+Ensure you save into your "dev" folder. You will be asked details for your github account.
+
+Check the readme of the application usually README.MD to install all the things that application needs
 
 ## Step 15 - B Setup for existing rails codebase
 

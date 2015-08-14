@@ -112,6 +112,7 @@ if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi
 ```
+This helps to ensure there is one place where all the BASH setup for each new terminal screen follows
 
 ## Step 6 - A + B - Copy Bash features into a current user account
 

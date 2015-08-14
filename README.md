@@ -100,7 +100,13 @@ touch .bashrc
 atom .bashrc
 ```
 
-Than you will need create .bash_profile and add the following:
+Than you will need create .bash_profile file: 
+```
+touch ~/.bash_profile
+atom ~/.bash_profile
+```
+and add the following into the file:
+
 ```
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc

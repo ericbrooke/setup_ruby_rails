@@ -367,7 +367,7 @@ Check the readme of the application usually README.MD to install all the things 
 ```
 bundle
 ```
-if it does not know where bundler is you have a problem with your Ruby Management for rbenv run - rbenv rehash
+if it does not know where bundler is you have a problem with your Ruby Management for rbenv run - rbenv rehash.  Most Rails projects will have  a database.yml.example file, you will need to duplicate this and remove .example of the end of the name.
 ```
 rakenuke
 ```
@@ -417,7 +417,8 @@ Add to your bash file i.e. .bashrc
 ```
 PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 ```
-Its worth noting that the 9.4 is the version of the app, thus it will NOT work if you have old 9.3 version installed.  
+Its worth noting that the 9.4 is the version of the app, thus it will NOT work if you have old 9.3 version installed.  Remember to close the BASH/Terminal window and open a new one, so the PATH is picked up.
+
 ###A - MySQL
 ```
 brew install mysql

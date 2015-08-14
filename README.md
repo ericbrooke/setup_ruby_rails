@@ -310,11 +310,11 @@ Install a version of ruby
 $ rbenv install -l
 
 # install a Ruby version:
-$ rbenv install 2.2.0
+$ rbenv install 2.2.2
 ```
 Set the Ruby to use.  You can do it via directory or via global
 ```
-rbenv global 2.2.0
+rbenv global 2.2.02
 rbenv rehash #use this command after every new ruby install
 ```
 add the following to your .bashrc file. If you miss this step it will state you do not have permissions

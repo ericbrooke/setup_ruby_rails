@@ -18,13 +18,18 @@ export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \
 # for use with rbenv
 #export PS1="\[\033[1;30m\][\[\033[1;35m\]\u@\h\[\033[1;30m\]] \[\033[1;32m\]\w \[\033[1;31m\](\$(rbenv version-name)) \$(__git_ps1 [%s]) \n  \[\033[1;30m\]\$\[\033[0m\]"
 
-# alias
-
-alias coverage="open ./coverage/index.html"
+# alias bash
 alias cd..="cd .."
 alias l="ls -al"
 alias lp="ls -p"
 alias h=history
+
+# alias git
+alias gs="git status"
+alias gco= "git checkout"
+
+# alias test coverage
+alias coverage="open ./coverage/index.html"
 
 # for rails dev
 alias rakenuke="bin/rake db:{drop,create,migrate,seed,test:prepare}"

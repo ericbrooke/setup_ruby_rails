@@ -12,6 +12,10 @@ The most annoying thing about having separate accounts is Music (aside of permis
 ## Working on the command line
 You will need to use the Application Terminal found in the Applications/Utilities Folder
 
+## When changing the PATH
+
+Close the terminal window, as the PATH changes willnot be picked up
+
 ## Step 1 - Identify your access to Unix core
 Your computer will have the application Terminal installed. I use [iTerm](http://iterm2.com), download it and move it to the Apllication folder.
 

@@ -99,7 +99,7 @@ If a new Mac User account none of these three file will exist.  Thus just create
 touch .bashrc
 atom .bashrc
 ```
-copy the below contents of .bashrc from the file, in this repo into your file in atom.  
+copy the below contents of .bashrc from the file, in this repo into your file in atom.  When you open the file in github, click on the RAW button, then select All (Command A) and then paste (Command V) in your file. Using RAW avois and newline/ CR mischeif
 
 Than you will need create .bash_profile and add the following:
 ```

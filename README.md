@@ -17,7 +17,7 @@ Your computer will have the application Terminal installed. I use [iTerm](http:/
 
 ## Step 2 - A + B - Xcode
 
-_Why do I need it?_ Cos Apple did not install this for you and annoying things will happen later without it.
+_Why do I need it?_ Cos Apple did not install this for you and annoying things will happen later without it. And you need a C complier which comes with Xcode
 
 Install Xcode from the App store. Or ensure it is installed. Make sure it has being opened and and agreement is agreed.
 ```

@@ -585,8 +585,11 @@ view
 * Set unlimited scrollback in the Profiles -> Terminal tab
 
 ###setup atom
-[git integration](http://blog.atom.io/2014/03/13/git-integration.html)
-Packages I use
+
+Checkout -> [git integration](http://blog.atom.io/2014/03/13/git-integration.html)
+
+Packages I use:
+* merge-conflicts
 * Linter Rubocop
 
 ##Issues

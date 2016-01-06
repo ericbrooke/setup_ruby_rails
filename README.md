@@ -59,6 +59,15 @@ Choose which, install it and ensure it is in teh Application folder, then setup 
 1. [Atom](https://atom.io) - Install Shell Commands from the Atom menu
 1. [Sublime](https://www.sublimetext.com/docs/2/osx_command_line.html)
 
+Set Your Editor variable in Bash:
+```
+export EDITOR="atom -nw"
+```
+OR
+```
+export EDITOR='subl -w'
+```
+
 ## Step 4 - A + B - Setup Git
 
 Why do I need it? - Git is your Version control, you need it to rollback code to earlier version and allows you to experiement with confidence.  It is also essential for work with teams and GitHub.

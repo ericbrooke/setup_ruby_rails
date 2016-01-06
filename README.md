@@ -100,6 +100,7 @@ Note ~ means your User folder i.e. /Users/ericbrooke. If you are not sure which 
 If a new Mac User account none of these three file will exist.  Thus just create a .bashrc file.
 
 ```
+cd ~
 touch .bashrc
 atom .bashrc
 ```

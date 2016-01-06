@@ -413,12 +413,34 @@ OK
 You will to download and setup a service for each
 
 ###A - Postgres
+There are two ways to do this one via an App and another via brew.  The App is simplier to begin with but will not get you the latest updates, though it is easier to remember to turn on and off.
+
+####App
 Download [Postgres](http://postgresapp.com)
 Add to your bash file i.e. .bashrc
 ```
 PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 ```
 Its worth noting that the 9.4 is the version of the app, thus it will NOT work if you have old 9.3 version installed.  Remember to close the BASH/Terminal window and open a new one, so the PATH is picked up.
+
+####Brew
+```
+brew update
+brew install postgres
+```
+To Start it:
+```
+postgres -D /usr/local/var/postgres
+```
+
+To have it boot up automatically:
+```
+mkdir -p ~/Library/LaunchAgents
+
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+```
 
 ###A - MySQL
 ```

@@ -36,3 +36,6 @@ alias rakenuke="bin/rake db:{drop,create,migrate,seed,test:prepare}"
 
 # Add RVM to PATH for scripting
 # export PATH="$PATH:$HOME/.rvm/bin"
+
+# Make Atom the Editor
+# export EDITOR="atom -nw"

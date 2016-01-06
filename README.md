@@ -432,6 +432,17 @@ To Start it:
 ```
 postgres -D /usr/local/var/postgres
 ```
+Open in another Tab:
+```
+createdb `whoami`
+psql
+```
+Helpful commands for psql
+```
+\?
+\q
+```
+help and quit
 
 To have it boot up automatically:
 ```

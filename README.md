@@ -324,11 +324,11 @@ Install a version of ruby
 $ rbenv install -l
 
 # install a Ruby version:
-$ rbenv install 2.2.2
+$ rbenv install 2.3.0
 ```
 Set the Ruby to use.  You can do it via directory or via global
 ```
-rbenv global 2.2.2
+rbenv global 2.3.0
 rbenv rehash #use this command after every new ruby install
 ```
 add the following to your .bashrc file. If you miss this step it will state you do not have permissions
@@ -364,7 +364,7 @@ If you already have RVM installed, update it to the latest version and install R
 ```
 rvm get stable --autolibs=enable
 rvm install ruby
-rvm --default use ruby-2.1.3
+rvm --default use ruby-2.3.0
 ```
 ## Step 15 - A Setup for existing rails codebase
 
@@ -392,7 +392,7 @@ move into the codebase folder
 
 specify ruby and gemset you want before you bundle:
 ```
-rvm use 2.2.0@gem_set_name --create
+rvm use 2.3.0@gem_set_name --create
 echo "gem: --no-document" >> ~/.gemrc
 bundle
 rake db:migrate
@@ -506,7 +506,7 @@ setup gemset:
 
 syntax = rvm use ruby_version@app_name -- create -- default
 ```
-rvm use 2.1.2@app_name -- create -- default
+rvm use 2.3.0@app_name -- create -- default
 ```
 ### For rails 3.2
 ```

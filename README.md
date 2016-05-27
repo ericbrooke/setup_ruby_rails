@@ -246,7 +246,6 @@ You may need change the permissions on these files:
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/id_rsa
 chmod 600 ~/.ssh/id_rsa.pub
-
 ```
 
 If you had forward agents setup in a config file you will also need to set it up.
@@ -255,7 +254,7 @@ Check github is all good with:
 ```
 ssh -T git@github.com
 ```
-## Step 11 - A - Setup up connection with (Github)[www.github.com] with a new account
+## Step 11 - A - Setup up connection with [Github](www.github.com) with a new account
 
 _Why do I need it?_ So your computer can talk to Github and push/pull code.
 
@@ -294,11 +293,11 @@ ssh -T git@github.com
 ```
 Common issue - [Error: Permission denied (publickey)](https://help.github.com/articles/error-permission-denied-publickey/)
 
-## Step 12 - A - Setup ruby version management - RVM or rbenv - choose one
+## Step 12 - A - Setup ruby version management - choose one
 
 _Why do it need it?_ In your future there are likely to be several versions of ruby on your machine, maybe with different Gem sets for each.
 
-_Options_ You could use RVM or Bundler/rbenv or chruby Here is a [comparsion](http://jonathan-jackson.net/rvm-and-rbenv)
+_Options_ You could use RVM or Bundler/rbenv or chruby. Here is a [comparsion](http://jonathan-jackson.net/rvm-and-rbenv)
 
 ###Chruby
 Install [chruby](https://github.com/postmodern/chruby)

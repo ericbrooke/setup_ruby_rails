@@ -191,7 +191,6 @@ alias rakenuke="bin/rake db:{drop,create,migrate,seed,test:prepare}"
 ```
 The #alias are my preferred commands of the things I use a lot, so I reduce them as I do them A LOT
 
-
 ## Step 7 - B Only - If you already have RVM installed
 
 If you already have RVM installed, update it to the latest version and install Ruby:
@@ -297,7 +296,7 @@ Common issue - [Error: Permission denied (publickey)](https://help.github.com/ar
 
 _Why do it need it?_ In your future there are likely to be several versions of ruby on your machine, maybe with different Gem sets for each.
 
-_Options_ You could use RVM or Bundler/rbenv or chruby. Here is a [comparsion](http://jonathan-jackson.net/rvm-and-rbenv)
+_Options_ You could use RVM or Bundler/rbenv or chruby. Here is a [comparsion of rvm and rbenv](http://jonathan-jackson.net/rvm-and-rbenv) and [here](https://gistlog.co/daqo/db4de42c9dea0a7d2a03) is a comparison between chruby and RVM
 
 ###Chruby
 Install [chruby](https://github.com/postmodern/chruby)

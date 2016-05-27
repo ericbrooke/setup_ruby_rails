@@ -298,7 +298,10 @@ Common issue - [Error: Permission denied (publickey)](https://help.github.com/ar
 
 _Why do it need it?_ In your future there are likely to be several versions of ruby on your machine, maybe with different Gem sets for each.
 
-_Options_ You could use RVM or Bundler/rbenv. Here is a [comparsion](http://jonathan-jackson.net/rvm-and-rbenv)
+_Options_ You could use RVM or Bundler/rbenv or chruby Here is a [comparsion](http://jonathan-jackson.net/rvm-and-rbenv)
+
+###Chruby
+Install [chruby](https://github.com/postmodern/chruby)
 
 ###RVM
 Install [RVM](http://rvm.io) - ensure to set PATH
@@ -313,7 +316,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 ```
 ###rbenv
 Install [rbenv](https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x)
-
 ```
 brew install rbenv ruby-build
 rbenv init

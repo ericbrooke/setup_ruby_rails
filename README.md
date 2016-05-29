@@ -14,7 +14,7 @@ You will need to use the Application Terminal found in the Applications/Utilitie
 
 ## When changing the PATH
 
-Close the terminal window, as the PATH changes willnot be picked up
+Close the terminal window, as the PATH changes will not be picked up
 
 ## Step 1 - Identify your access to Unix core
 Your computer will have the application Terminal installed. I use [iTerm](http://iterm2.com), download it and move it to the Apllication folder.

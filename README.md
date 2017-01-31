@@ -303,6 +303,7 @@ _Why do it need it?_ In your future there are likely to be several versions of r
 _Options_ You could use RVM or Bundler/rbenv or chruby. Here is a [comparsion of rvm and rbenv](http://jonathan-jackson.net/rvm-and-rbenv) and [here](https://gistlog.co/daqo/db4de42c9dea0a7d2a03) is a comparison between chruby and RVM
 
 ###Chruby
+You may need to install wget first ```brew install wget --with-libressl```
 Install [chruby](https://github.com/postmodern/chruby)
 
 ###RVM

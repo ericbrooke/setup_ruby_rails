@@ -304,6 +304,7 @@ _Options_ You could use RVM or Bundler/rbenv or chruby. Here is a [comparsion of
 
 ###Chruby
 You may need to install wget first ```brew install wget --with-libressl```
+
 Install [chruby](https://github.com/postmodern/chruby)
 
 ###RVM

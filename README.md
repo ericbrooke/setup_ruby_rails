@@ -298,7 +298,7 @@ Common issue - [Error: Permission denied (publickey)](https://help.github.com/ar
 
 ## Step 12 - A - Setup ruby version management - choose one
 
-_Why do it need it?_ In your future there are likely to be several versions of ruby on your machine, maybe with different Gem sets for each.
+_Why do it need it?_ In your future there are likely to be several versions of ruby on your machine, maybe with different Gem sets for each. Look up the latest stable version at https://www.ruby-lang.org/en/downloads/
 
 _Options_ You could use RVM or Bundler/rbenv or chruby. Here is a [comparsion of rvm and rbenv](http://jonathan-jackson.net/rvm-and-rbenv) and [here](https://gistlog.co/daqo/db4de42c9dea0a7d2a03) is a comparison between chruby and RVM
 
@@ -330,11 +330,11 @@ Install a version of ruby
 $ rbenv install -l
 
 # install a Ruby version:
-$ rbenv install 2.3.0
+$ rbenv install 3.2.0
 ```
 Set the Ruby to use.  You can do it via directory or via global
 ```
-rbenv global 2.3.0
+rbenv global 3.2.0
 rbenv rehash #use this command after every new ruby install
 ```
 add the following to your .bashrc file. If you miss this step it will state you do not have permissions
@@ -370,7 +370,7 @@ If you already have RVM installed, update it to the latest version and install R
 ```
 rvm get stable --autolibs=enable
 rvm install ruby
-rvm --default use ruby-2.3.0
+rvm --default use ruby-3.2.0
 ```
 ## Step 15 - A Setup for existing rails codebase
 
@@ -398,7 +398,7 @@ move into the codebase folder
 
 specify ruby and gemset you want before you bundle:
 ```
-rvm use 2.3.0@gem_set_name --create
+rvm use 3.2.0@gem_set_name --create
 echo "gem: --no-document" >> ~/.gemrc
 bundle
 rake db:migrate

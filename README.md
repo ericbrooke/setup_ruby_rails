@@ -50,7 +50,7 @@ Now open xcode and agree to the terms. You will need to do this once before proc
 
 ## Step 3 - A + B - Text Editor/IDE
 
-_Why do I need it?_ - You need someting to write your code in something, pen and paper may allow you but the excution will be a bitch.
+_Why do I need it?_ - You need someting to write your code in something, pen and paper may allow you but the execution will be a tough.
 
 Setup your text editor to open from command line (I like Atom):
 
